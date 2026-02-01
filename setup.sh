@@ -4,8 +4,8 @@ echo "Setting up Sync vs Async API Demo..."
 echo ""
 
 # Create virtual environment
-echo "Creating virtual environment..."
-python3 -m venv venv
+echo "Creating virtual environment with Python 3.12..."
+python3.12 -m venv venv
 
 # Activate virtual environment
 echo "Activating virtual environment..."

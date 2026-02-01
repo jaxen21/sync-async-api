@@ -22,8 +22,11 @@ def validate_callback_url(url: str) -> tuple[bool, str | None]:
         if not hostname:
             return False, "Invalid URL: no hostname"
         
-        # Block localhost
-        if hostname.lower() in ["localhost", "127.0.0.1", "::1"]:
+        # Block localhost if configured
+        from ..config import get_settings
+        settings = get_settings()
+        
+        if settings.block_localhost and hostname.lower() in ["localhost", "127.0.0.1", "::1"]:
             return False, "Localhost URLs are not allowed"
         
         # Try to parse as IP

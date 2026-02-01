@@ -186,6 +186,11 @@ MAX_CALLBACK_RETRIES=3         # Callback retry attempts
 # Rate Limiting
 RATE_LIMIT_REQUESTS=100        # Requests per window
 RATE_LIMIT_WINDOW_SECONDS=60   # Rate limit window
+
+# Security
+ALLOWED_CALLBACK_SCHEMES=["http","https"]
+BLOCK_PRIVATE_IPS=true
+BLOCK_LOCALHOST=false
 ```
 
 ---

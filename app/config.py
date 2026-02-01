@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     # Application
     app_name: str = "sync-async-api"
     debug: bool = False
+    log_level: str = "INFO"
     
     # Database
     database_path: str = "./data/requests.db"
