@@ -129,4 +129,3 @@ cython_debug/
 
 # Project specific
 .planning_docs/
-DEVELOPER_GUIDE.md

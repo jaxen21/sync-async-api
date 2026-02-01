@@ -257,8 +257,6 @@ sync-async/
 ## 📚 Additional Resources
 
 - **Interactive API Docs:** http://localhost:8000/docs
-- **DEVELOPER_GUIDE.md** - Detailed implementation guide
-- **.planning_docs/** - Architecture and planning documents
 
 ---
 
